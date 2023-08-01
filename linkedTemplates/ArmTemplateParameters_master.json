@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "covid-reporting-adf-rcg"
+        },
+        "ls_ablob_covidreportingsa_connectionString": {
+            "value": ""
+        },
+        "ls_adls_covidreportingdl_accountKey": {
+            "value": ""
+        },
+        "ls_hdi_covid_cluster_clusterPassword": {
+            "value": ""
+        },
+        "ls_hdi_covid_cluster_clusterSshPassword": {
+            "value": ""
+        },
+        "ls_hdi_covid_cluster_servicePrincipalKey": {
+            "value": ""
+        },
+        "ls_db_covid_cluster_accessToken": {
+            "value": ""
+        },
+        "ls_sql_covid_db_connectionString": {
+            "value": ""
+        },
+        "ls_adls_covidreportingdl_properties_typeProperties_url": {
+            "value": "https://covidreportingdlrcg.dfs.core.windows.net/"
+        },
+        "ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
+            "value": "@{linkedService().sourceBaseURL}"
+        },
+        "ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
+            "value": "205c17bb-831d-4f69-bd0b-404f1395f67e"
+        },
+        "ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
+            "value": "covid-reporting-rg"
+        },
+        "ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
+            "value": "fccaf069-6f2c-4447-acba-bed8fccc3f80"
+        },
+        "ls_hdi_covid_cluster_properties_typeProperties_tenant": {
+            "value": "9652d7c2-1ccf-4940-8151-4a92bd474ed0"
+        },
+        "ls_AzureKeyVault_properties_typeProperties_baseUrl": {
+            "value": "https://formula1-p-key-vault.vault.azure.net/"
+        },
+        "AzureKeyVault1_properties_typeProperties_baseUrl": {
+            "value": "https://covid-hdi-key-vault.vault.azure.net/"
+        },
+        "ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+            "value": "0726-093915-eiqaf35p"
+        },
+        "tr_population_data_arrived_properties_typeProperties_scope": {
+            "value": "/subscriptions/205c17bb-831d-4f69-bd0b-404f1395f67e/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingsarcg"
+        },
+        "containerUri": {
+            "value": ""
+        },
+        "containerSasToken": {
+            "value": ""
+        }
+    }
+}
